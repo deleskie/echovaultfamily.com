@@ -1,0 +1,126 @@
+import Head from "next/head";
+import Link from "next/link";
+import Layout from "@components/Layout";
+import { SITE_URL } from "@config/site";
+
+export default function SmallTownSnowPage() {
+  return (
+    <>
+      <Head>
+        <title>Small Town Snow – EchoVault Journal</title>
+        <meta
+          name="description"
+          content="Snow as a setting: quiet streets, warm windows, and the memory of walking downtown when Christmas felt bigger than you."
+        />
+        <meta property="og:title" content="Small Town Snow – EchoVault Journal" />
+        <meta
+          property="og:description"
+          content="A reflection on winter quiet, the walk downtown, and how a single image can open a door to the atmosphere of a life."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`${SITE_URL}/blog/small-town-snow`} />
+        <meta property="og:image" content={`${SITE_URL}/social/og-link-card.svg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${SITE_URL}/social/og-link-card.svg`} />
+        <link rel="canonical" href={`${SITE_URL}/blog/small-town-snow`} />
+      </Head>
+      <Layout>
+        <article className="blog-article">
+          <header className="blog-hero blog-hero--snow">
+            <div className="content blog-hero-inner">
+              <p className="blog-hero-kicker">Personal essay</p>
+              <h1 className="blog-hero-title">Small Town Snow</h1>
+              <p className="blog-hero-tagline">
+                Snow doesn’t feel like weather here. It feels like a setting, like the whole town decided to hold its
+                breath for a minute.
+              </p>
+              <p className="blog-article-meta">Approx. 6 minute read</p>
+            </div>
+          </header>
+          <div className="content blog-article-body">
+            <p>There’s a certain kind of snow that doesn’t feel like weather. It feels like a setting.</p>
+            <p>
+              The street is muffled. The buildings look taller because the air is full of white. The branches are heavy
+              with it, like the whole city decided to hold its breath for a minute. Even the footprints feel polite,
+              as if people are trying not to disturb whatever quiet agreement the world just made.
+            </p>
+            <p>It pulls me straight back to being young and walking downtown around Christmas.</p>
+            <p>
+              Not the postcard version of Christmas, either. The real one. The one where you are bundled up because
+              you have to be, not because it’s cute. The one where your cheeks sting a bit and your hands are never as
+              warm as you want them to be. The one where the streetlights and shop windows feel like small islands of
+              gold, and the rest of the world is blue and white and moving slower than usual.
+            </p>
+            <p>
+              I don’t love snow anymore. Not really. I’ve done my time with it. I have no romantic attachment to
+              shoveling, slush, wet socks, or the kind of wind that makes you question your life choices.
+            </p>
+            <p>But I still love what snow can do to a place.</p>
+            <p>
+              It erases the clutter. It softens the sharp edges. It quiets the whole soundtrack. You look down a street
+              like this and you can almost hear the absence. No traffic roar. No constant buzzing. Just the sound of
+              your own boots and whatever laughter carries from farther down the sidewalk.
+            </p>
+            <p>And then there’s the other part. The part that is pure memory physics.</p>
+            <p>
+              Because Christmas isn’t only a date. It’s a smell, a light, a feeling in your chest when you step out
+              into the cold and you know you’re walking toward something. A house. A family. A kitchen. A place where
+              the air is warmer and someone has been waiting for you, even if they don’t say it out loud.
+            </p>
+            <p>
+              That’s what this picture reminds me of. Not presents. Not shopping. Not even the holiday itself. It
+              reminds me of the walk. The walk where you are young enough that everything feels bigger than you. The
+              streets. The buildings. The future.
+            </p>
+            <p>
+              It’s all positive for me. Even the cold is positive, because it comes with a kind of clean clarity. That
+              cold that makes the world feel honest.
+            </p>
+            <p>
+              If you’ve ever tried to explain that kind of memory to someone who didn’t live it, you know the problem.
+              You can describe the weather and the street and the time of year, but that isn’t the thing. The thing is
+              the atmosphere. The emotional color. The way a place can hold a version of you that you don’t carry
+              around every day anymore.
+            </p>
+            <p>That’s why I like images like this. They do not need to shout. They just open a door.</p>
+            <p>
+              A photo like this is a prompt, even if you never intended it to be one. It asks, quietly, “Where were
+              you headed?” It asks, “Who did you walk with?” It asks, “What did you believe about your life back
+              then?” It asks, “What did Christmas mean in your house, in your town, in your family?”
+            </p>
+            <p>
+              And the answers are never generic. They are never one-size-fits-all. Some people remember the joy. Some
+              remember the grief. Some remember the grind. Some remember the kitchen being too small for the number of
+              people who showed up. Some remember the music. Some remember the silence. Some remember that one year
+              where everything felt normal, and they did not realize it would be the last normal one for a while.
+            </p>
+            <p>
+              But this photo, for me, lands on the good side. It’s a reminder of a time when the world felt steady,
+              even if it wasn’t. A reminder that the simplest things can become anchors. A street. Snow on a branch.
+              The glow from a window. The feeling that you have somewhere to be.
+            </p>
+            <p>That’s what I want to keep. Not the snow itself. Not the hassle. The warmth inside the memory.</p>
+            <p>
+              The best part is that this kind of story is easy to capture, if you choose to. You do not need a big
+              performance. You just need a moment and a question.
+            </p>
+            <ul>
+              <li>What does this street remind you of?</li>
+              <li>Where were you walking to?</li>
+              <li>Who were you then?</li>
+              <li>And what part of that person do you still carry today?</li>
+            </ul>
+            <p>
+              If you want a calm, private place to capture that atmosphere in your own words, EchoVault is built for
+              it. <Link href="/how-it-works">See how it works</Link>, or <Link href="/pricing">view the tiers</Link>{" "}
+              whenever you’re ready.
+            </p>
+            <p className="blog-back-link">
+              <Link href="/blog">← Back to all essays</Link>
+            </p>
+          </div>
+        </article>
+      </Layout>
+    </>
+  );
+}

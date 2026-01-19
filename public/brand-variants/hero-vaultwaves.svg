@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-label="EchoVault hero image - vault waves">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1500" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1117"/>
+      <stop offset="0.55" stop-color="#111726"/>
+      <stop offset="1" stop-color="#0e1117"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(380 210) rotate(45) scale(520 380)">
+      <stop stop-color="#6f2ee5" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#6f2ee5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1240 160) rotate(20) scale(560 420)">
+      <stop stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="520" y1="260" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6f2ee5"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow1)"/>
+  <rect width="1600" height="900" fill="url(#glow2)"/>
+
+  <!-- vault card -->
+  <g transform="translate(980 240)">
+    <rect x="0" y="0" width="460" height="520" rx="28" fill="rgba(31,38,53,0.78)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="34" y="34" width="392" height="452" rx="22" fill="rgba(18,25,41,0.6)" stroke="rgba(255,255,255,0.10)"/>
+
+    <!-- concentric echo arcs -->
+    <path d="M126 252c54-76 154-76 208 0" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" opacity="0.92"/>
+    <path d="M104 252c68-104 220-104 288 0" stroke="rgba(167,139,250,0.70)" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+    <path d="M84 252c82-128 266-128 348 0" stroke="rgba(111,46,229,0.50)" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+
+    <!-- keyhole -->
+    <circle cx="230" cy="286" r="26" fill="rgba(255,255,255,0.12)"/>
+    <path d="M230 310v58" stroke="rgba(255,255,255,0.18)" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- caption lines -->
+    <rect x="70" y="410" width="320" height="10" rx="5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="70" y="436" width="270" height="10" rx="5" fill="rgba(255,255,255,0.10)"/>
+    <rect x="70" y="462" width="210" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+  </g>
+
+  <!-- wave field -->
+  <g opacity="0.85">
+    <path d="M-40 640C180 560 320 700 520 640C720 580 850 520 1040 560C1230 600 1340 720 1640 620" stroke="rgba(167,139,250,0.24)" stroke-width="2"/>
+    <path d="M-40 680C180 600 330 740 540 680C750 620 910 560 1080 600C1250 632 1400 760 1640 660" stroke="rgba(111,46,229,0.20)" stroke-width="2"/>
+    <path d="M-40 720C160 650 360 800 560 730C760 660 940 610 1120 640C1295 670 1420 820 1640 710" stroke="rgba(255,255,255,0.10)" stroke-width="2"/>
+    <path d="M-40 760C160 700 380 860 600 770C820 680 980 660 1160 700C1320 735 1460 880 1640 750" stroke="rgba(167,139,250,0.16)" stroke-width="2"/>
+    <path d="M-40 800C160 750 420 910 640 810C880 705 1020 720 1210 760C1380 800 1480 930 1640 790" stroke="rgba(111,46,229,0.14)" stroke-width="2"/>
+  </g>
+
+  <!-- subtle noise dots -->
+  <g filter="url(#soft)" opacity="0.22">
+    <circle cx="220" cy="210" r="3" fill="#a78bfa"/>
+    <circle cx="270" cy="320" r="2" fill="#6f2ee5"/>
+    <circle cx="420" cy="260" r="2" fill="#ffffff"/>
+    <circle cx="560" cy="180" r="2" fill="#a78bfa"/>
+    <circle cx="700" cy="310" r="2" fill="#6f2ee5"/>
+    <circle cx="860" cy="220" r="2" fill="#ffffff"/>
+    <circle cx="920" cy="340" r="2" fill="#a78bfa"/>
+  </g>
+</svg>

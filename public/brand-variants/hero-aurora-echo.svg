@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-label="EchoVault hero image - aurora echo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1117"/>
+      <stop offset="0.55" stop-color="#121929"/>
+      <stop offset="1" stop-color="#0e1117"/>
+    </linearGradient>
+    <radialGradient id="a1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(520 220) rotate(30) scale(760 420)">
+      <stop stop-color="#6f2ee5" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#6f2ee5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="a2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1120 260) rotate(-12) scale(820 480)">
+      <stop stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="430" y1="260" x2="1180" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6f2ee5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#a1)"/>
+  <rect width="1600" height="900" fill="url(#a2)"/>
+
+  <!-- aurora ribbons -->
+  <path d="M-80 520C210 360 460 600 720 430C950 280 1120 420 1380 320C1500 270 1600 250 1680 240" stroke="rgba(167,139,250,0.20)" stroke-width="70" stroke-linecap="round"/>
+  <path d="M-80 610C180 470 480 720 760 560C1010 420 1180 520 1460 430C1560 398 1640 382 1720 360" stroke="rgba(111,46,229,0.14)" stroke-width="80" stroke-linecap="round"/>
+
+  <!-- central echo rings -->
+  <g transform="translate(0 0)">
+    <circle cx="640" cy="470" r="190" stroke="rgba(255,255,255,0.10)" stroke-width="2"/>
+    <circle cx="640" cy="470" r="250" stroke="rgba(167,139,250,0.16)" stroke-width="2"/>
+    <circle cx="640" cy="470" r="320" stroke="rgba(111,46,229,0.12)" stroke-width="2"/>
+    <circle cx="640" cy="470" r="410" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+  </g>
+
+  <!-- vault emblem -->
+  <g transform="translate(980 420)">
+    <rect x="-120" y="-120" width="240" height="240" rx="36" fill="rgba(31,38,53,0.72)" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M-62 -18L0 -70l62 52v98a28 28 0 0 1-28 28h-68a28 28 0 0 1-28-28v-98Z" stroke="url(#stroke)" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M-28 10c16-18 40-18 56 0s40 18 56 0" stroke="rgba(255,255,255,0.75)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

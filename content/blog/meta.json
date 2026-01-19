@@ -1,0 +1,237 @@
+{
+  "the-drummer-walking-home": {
+    "heroVariant": "drummer",
+    "en": {
+      "kicker": "Personal essay",
+      "title": "The Drummer Walking Home",
+      "description": "On the quiet after the noise, the walk back to ordinary life, and the small stories that disappear first.",
+      "tagline": "On the quiet after the noise, the walk back to ordinary life, and the small stories that disappear first.",
+      "meta": "Approx. 10 minute read",
+      "indexDescription": "On the quiet after the noise, the walk back to ordinary life, and the small stories that disappear first.",
+      "indexMeta": "Personal essay · 10 minute read"
+    },
+    "hu": {
+      "kicker": "Személyes esszé",
+      "title": "A dobos hazafelé sétál",
+      "description": "A csendről a zaj után, a hétköznapokba vezető útról, és az apró történetekről, amelyek tűnnek el először.",
+      "tagline": "A csendről a zaj után, a hétköznapokba vezető útról, és az apró történetekről, amelyek tűnnek el először.",
+      "meta": "Kb. 10 perc olvasás",
+      "indexDescription": "A csendről a zaj után, a hétköznapokba vezető útról, és az apró történetekről, amelyek tűnnek el először.",
+      "indexMeta": "Személyes esszé · 10 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Essai personnel",
+      "title": "Le batteur qui rentre à pied",
+      "description": "Sur le calme après le bruit, le retour à la vie ordinaire, et les petites histoires qui disparaissent en premier.",
+      "tagline": "Sur le calme après le bruit, le retour à la vie ordinaire, et les petites histoires qui disparaissent en premier.",
+      "meta": "Environ 10 min de lecture",
+      "indexDescription": "Sur le calme après le bruit, le retour à la vie ordinaire, et les petites histoires qui disparaissent en premier.",
+      "indexMeta": "Essai personnel · 10 min de lecture"
+    },
+    "es": {
+      "kicker": "Ensayo personal",
+      "title": "El baterista que vuelve caminando",
+      "description": "Sobre el silencio después del ruido, el regreso a la vida común y las pequeñas historias que desaparecen primero.",
+      "tagline": "Sobre el silencio después del ruido, el regreso a la vida común y las pequeñas historias que desaparecen primero.",
+      "meta": "Aprox. 10 min de lectura",
+      "indexDescription": "Sobre el silencio después del ruido, el regreso a la vida común y las pequeñas historias que desaparecen primero.",
+      "indexMeta": "Ensayo personal · 10 min de lectura"
+    }
+  },
+  "small-town-snow": {
+    "heroVariant": "snow",
+    "en": {
+      "kicker": "Personal essay",
+      "title": "Small Town Snow",
+      "description": "Snow as a setting: quiet streets, warm windows, and the memory of walking downtown when Christmas felt bigger than you.",
+      "tagline": "Snow as a setting: quiet streets, warm windows, and the memory of walking downtown when Christmas felt bigger than you.",
+      "meta": "Approx. 6 minute read",
+      "indexDescription": "Snow as a setting: quiet streets, warm windows, and the memory of walking downtown when Christmas felt bigger than you.",
+      "indexMeta": "Personal essay · 6 minute read"
+    },
+    "hu": {
+      "kicker": "Személyes esszé",
+      "title": "Kisvárosi hó",
+      "description": "A hó mint díszlet: csendes utcák, meleg ablakok, és az emlék, ahogy karácsonykor a belváros felé sétálsz, amikor minden nagyobbnak tűnt nálad.",
+      "tagline": "A hó mint díszlet: csendes utcák, meleg ablakok, és az emlék, ahogy karácsonykor a belváros felé sétálsz, amikor minden nagyobbnak tűnt nálad.",
+      "meta": "Kb. 6 perc olvasás",
+      "indexDescription": "A hó mint díszlet: csendes utcák, meleg ablakok, és az emlék, ahogy karácsonykor a belváros felé sétálsz, amikor minden nagyobbnak tűnt nálad.",
+      "indexMeta": "Személyes esszé · 6 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Essai personnel",
+      "title": "Neige de petite ville",
+      "description": "La neige comme décor : rues calmes, fenêtres chaleureuses, et le souvenir de marcher en ville quand Noël te semblait plus grand que toi.",
+      "tagline": "La neige comme décor : rues calmes, fenêtres chaleureuses, et le souvenir de marcher en ville quand Noël te semblait plus grand que toi.",
+      "meta": "Environ 6 min de lecture",
+      "indexDescription": "La neige comme décor : rues calmes, fenêtres chaleureuses, et le souvenir de marcher en ville quand Noël te semblait plus grand que toi.",
+      "indexMeta": "Essai personnel · 6 min de lecture"
+    },
+    "es": {
+      "kicker": "Ensayo personal",
+      "title": "Nieve de pueblo",
+      "description": "La nieve como escenario: calles silenciosas, ventanas cálidas y el recuerdo de caminar al centro cuando la Navidad se sentía más grande que tú.",
+      "tagline": "La nieve como escenario: calles silenciosas, ventanas cálidas y el recuerdo de caminar al centro cuando la Navidad se sentía más grande que tú.",
+      "meta": "Aprox. 6 min de lectura",
+      "indexDescription": "La nieve como escenario: calles silenciosas, ventanas cálidas y el recuerdo de caminar al centro cuando la Navidad se sentía más grande que tú.",
+      "indexMeta": "Ensayo personal · 6 min de lectura"
+    }
+  },
+  "echoes-in-the-grid": {
+    "heroVariant": "manifesto",
+    "en": {
+      "kicker": "Founder story",
+      "title": "Echoes in the Grid: Why I Built EchoVault",
+      "description": "A founder story about science fiction, networks, grief, and building EchoVault as a humane way to leave more of ourselves for the people who come after.",
+      "tagline": "From watching Tron and reading cyberpunk as a kid, to building the real network Grid, to realizing years after my dad died at 59 that I wanted to leave more than a few photos and scattered files.",
+      "meta": "Approx. 12 minute read",
+      "indexDescription": "A founder story about science fiction, networks, grief, and building EchoVault as a humane way to leave more of ourselves for the people who come after.",
+      "indexMeta": "Founder story · 12 minute read"
+    },
+    "hu": {
+      "kicker": "Alapítói történet",
+      "title": "Visszhangok a hálóban: miért építettem az EchoVaultot",
+      "description": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault emberi módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
+      "tagline": "Gyerekként a Tron és a cyberpunk világa, később a valódi hálózatok építése, majd a felismerés: évekkel azután, hogy az apám 59 évesen meghalt, többet szeretnék hátrahagyni pár fotónál és szétszórt fájlnál.",
+      "meta": "Kb. 12 perc olvasás",
+      "indexDescription": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault emberi módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
+      "indexMeta": "Alapítói történet · 12 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Histoire du fondateur",
+      "title": "Des échos dans le réseau : pourquoi j’ai créé EchoVault",
+      "description": "Une histoire de fondateur sur la science-fiction, les réseaux, le deuil, et la création d’EchoVault comme manière humaine de laisser davantage de nous-mêmes à ceux qui viennent après.",
+      "tagline": "De Tron et du cyberpunk dans l’enfance, à la construction du véritable réseau, jusqu’à réaliser — des années après la mort de mon père à 59 ans — que je voulais laisser plus que quelques photos et des fichiers éparpillés.",
+      "meta": "Environ 12 min de lecture",
+      "indexDescription": "Une histoire de fondateur sur la science-fiction, les réseaux, le deuil, et la création d’EchoVault comme manière humaine de laisser davantage de nous-mêmes à ceux qui viennent après.",
+      "indexMeta": "Histoire du fondateur · 12 min de lecture"
+    },
+    "es": {
+      "kicker": "Historia del fundador",
+      "title": "Ecos en la red: por qué construí EchoVault",
+      "description": "Una historia del fundador sobre ciencia ficción, redes, duelo y construir EchoVault como una forma humana de dejar más de nosotros para quienes vienen después.",
+      "tagline": "De ver Tron y leer cyberpunk de niño, a construir la red real, hasta darme cuenta — años después de que mi padre muriera a los 59 — de que quería dejar más que unas pocas fotos y archivos dispersos.",
+      "meta": "Aprox. 12 min de lectura",
+      "indexDescription": "Una historia del fundador sobre ciencia ficción, redes, duelo y construir EchoVault como una forma humana de dejar más de nosotros para quienes vienen después.",
+      "indexMeta": "Historia del fundador · 12 min de lectura"
+    }
+  },
+  "we-should-have-recorded-this": {
+    "heroVariant": "recorded",
+    "en": {
+      "kicker": "Personal essay",
+      "title": "The moment you realize \"we should have recorded this\"",
+      "description": "On the quiet, everyday moments when you suddenly understand how fragile a single conversation is, and how much future regret is hiding inside the sentence, \"We should have recorded this.\"",
+      "tagline": "On the quiet, everyday moments when you suddenly understand how fragile a single conversation is, and how much future regret is hiding inside the sentence, \"We should have recorded this.\"",
+      "meta": "Approx. 10 minute read",
+      "indexDescription": "On the quiet, everyday moments when you suddenly understand how fragile a single conversation is, and how much future regret is hiding inside the sentence, \"We should have recorded this.\"",
+      "indexMeta": "Personal essay · 10 minute read"
+    },
+    "hu": {
+      "kicker": "Személyes esszé",
+      "title": "Az a pillanat, amikor rájössz: „ezt fel kellett volna venni”",
+      "description": "Azokról a csendes, hétköznapi pillanatokról, amikor hirtelen megérted, mennyire törékeny egyetlen beszélgetés, és mennyi jövőbeli bánat bújik meg a mondatban: „Ezt fel kellett volna venni.”",
+      "tagline": "Azokról a csendes, hétköznapi pillanatokról, amikor hirtelen megérted, mennyire törékeny egyetlen beszélgetés, és mennyi jövőbeli bánat bújik meg a mondatban: „Ezt fel kellett volna venni.”",
+      "meta": "Kb. 10 perc olvasás",
+      "indexDescription": "Azokról a csendes, hétköznapi pillanatokról, amikor hirtelen megérted, mennyire törékeny egyetlen beszélgetés, és mennyi jövőbeli bánat bújik meg a mondatban: „Ezt fel kellett volna venni.”",
+      "indexMeta": "Személyes esszé · 10 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Essai personnel",
+      "title": "Le moment où tu te dis : « on aurait dû enregistrer ça »",
+      "description": "Sur ces instants calmes du quotidien où l’on comprend soudain à quel point une conversation est fragile — et combien de regrets futurs se cachent dans la phrase : « On aurait dû enregistrer ça. »",
+      "tagline": "Sur ces instants calmes du quotidien où l’on comprend soudain à quel point une conversation est fragile — et combien de regrets futurs se cachent dans la phrase : « On aurait dû enregistrer ça. »",
+      "meta": "Environ 10 min de lecture",
+      "indexDescription": "Sur ces instants calmes du quotidien où l’on comprend soudain à quel point une conversation est fragile — et combien de regrets futurs se cachent dans la phrase : « On aurait dû enregistrer ça. »",
+      "indexMeta": "Essai personnel · 10 min de lecture"
+    },
+    "es": {
+      "kicker": "Ensayo personal",
+      "title": "El momento en que piensas: « deberíamos haber grabado esto »",
+      "description": "Sobre esos momentos silenciosos y cotidianos en los que de pronto entiendes lo frágil que es una conversación, y cuánto arrepentimiento futuro se esconde en la frase: « Deberíamos haber grabado esto ».",
+      "tagline": "Sobre esos momentos silenciosos y cotidianos en los que de pronto entiendes lo frágil que es una conversación, y cuánto arrepentimiento futuro se esconde en la frase: « Deberíamos haber grabado esto ».",
+      "meta": "Aprox. 10 min de lectura",
+      "indexDescription": "Sobre esos momentos silenciosos y cotidianos en los que de pronto entiendes lo frágil que es una conversación, y cuánto arrepentimiento futuro se esconde en la frase: « Deberíamos haber grabado esto ».",
+      "indexMeta": "Ensayo personal · 10 min de lectura"
+    }
+  },
+  "designing-ai-for-grief-not-growth": {
+    "heroVariant": "grief",
+    "en": {
+      "kicker": "Product and ethics",
+      "title": "Designing AI for grief, not growth hacking",
+      "description": "Why EchoVault is built to feel slow, gentle, and consent first, and what changes when you design AI around real families instead of engagement graphs.",
+      "tagline": "Why EchoVault is built to feel slow, gentle, and consent first, and what changes when you design AI around real families instead of engagement graphs.",
+      "meta": "Approx. 10 minute read",
+      "indexDescription": "Why EchoVault is built to feel slow, gentle, and consent first, and what changes when you design AI around real families instead of engagement graphs.",
+      "indexMeta": "Product and ethics · 10 minute read"
+    },
+    "hu": {
+      "kicker": "Termék és etika",
+      "title": "MI-t tervezni a gyászhoz, nem a növekedési trükkökhöz",
+      "description": "Miért olyan az EchoVault, hogy lassúnak, szelídnek és beleegyezés-központúnak érződjön — és mi változik, ha az MI-t valódi családokra tervezzük, nem elköteleződési grafikonokra.",
+      "tagline": "Miért olyan az EchoVault, hogy lassúnak, szelídnek és beleegyezés-központúnak érződjön — és mi változik, ha az MI-t valódi családokra tervezzük, nem elköteleződési grafikonokra.",
+      "meta": "Kb. 10 perc olvasás",
+      "indexDescription": "Miért olyan az EchoVault, hogy lassúnak, szelídnek és beleegyezés-központúnak érződjön — és mi változik, ha az MI-t valódi családokra tervezzük, nem elköteleződési grafikonokra.",
+      "indexMeta": "Termék és etika · 10 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Produit et éthique",
+      "title": "Concevoir une IA pour le deuil, pas pour le growth hacking",
+      "description": "Pourquoi EchoVault est conçu pour être lent, doux et centré sur le consentement — et ce qui change quand on crée une IA pour de vraies familles plutôt que pour des courbes d’engagement.",
+      "tagline": "Pourquoi EchoVault est conçu pour être lent, doux et centré sur le consentement — et ce qui change quand on crée une IA pour de vraies familles plutôt que pour des courbes d’engagement.",
+      "meta": "Environ 10 min de lecture",
+      "indexDescription": "Pourquoi EchoVault est conçu pour être lent, doux et centré sur le consentement — et ce qui change quand on crée une IA pour de vraies familles plutôt que pour des courbes d’engagement.",
+      "indexMeta": "Produit et éthique · 10 min de lecture"
+    },
+    "es": {
+      "kicker": "Producto y ética",
+      "title": "Diseñar IA para el duelo, no para el growth hacking",
+      "description": "Por qué EchoVault está diseñado para sentirse lento, amable y centrado en el consentimiento — y qué cambia cuando diseñas IA para familias reales en lugar de gráficos de engagement.",
+      "tagline": "Por qué EchoVault está diseñado para sentirse lento, amable y centrado en el consentimiento — y qué cambia cuando diseñas IA para familias reales en lugar de gráficos de engagement.",
+      "meta": "Aprox. 10 min de lectura",
+      "indexDescription": "Por qué EchoVault está diseñado para sentirse lento, amable y centrado en el consentimiento — y qué cambia cuando diseñas IA para familias reales en lugar de gráficos de engagement.",
+      "indexMeta": "Producto y ética · 10 min de lectura"
+    }
+  },
+  "what-families-want-from-a-digital-twin": {
+    "heroVariant": "families",
+    "en": {
+      "kicker": "Listening and insight",
+      "title": "What families actually want from a \"digital twin\"",
+      "description": "Spoiler: not science fiction. They want familiar phrases, honest stories, clear boundaries, and a place to keep talking to the people who shaped them.",
+      "tagline": "Spoiler: not science fiction. They want familiar phrases, honest stories, clear boundaries, and a place to keep talking to the people who shaped them.",
+      "meta": "Approx. 9 minute read",
+      "indexDescription": "Spoiler: not science fiction. They want familiar phrases, honest stories, clear boundaries, and a place to keep talking to the people who shaped them.",
+      "indexMeta": "Listening and insight · 9 minute read"
+    },
+    "hu": {
+      "kicker": "Hallgatás és felismerések",
+      "title": "Mit akarnak valójában a családok egy „digitális ikertől”",
+      "description": "Spoiler: nem sci-fit. Ismerős mondatokat, őszinte történeteket, világos határokat, és egy helyet, ahol tovább beszélgethetnek azokkal, akik formálták őket.",
+      "tagline": "Spoiler: nem sci-fit. Ismerős mondatokat, őszinte történeteket, világos határokat, és egy helyet, ahol tovább beszélgethetnek azokkal, akik formálták őket.",
+      "meta": "Kb. 9 perc olvasás",
+      "indexDescription": "Spoiler: nem sci-fit. Ismerős mondatokat, őszinte történeteket, világos határokat, és egy helyet, ahol tovább beszélgethetnek azokkal, akik formálták őket.",
+      "indexMeta": "Hallgatás és felismerések · 9 perc olvasás"
+    },
+    "fr": {
+      "kicker": "Écoute et perspectives",
+      "title": "Ce que les familles veulent vraiment d’un « jumeau numérique »",
+      "description": "Spoiler : pas de la science-fiction. Elles veulent des phrases familières, des histoires honnêtes, des limites claires, et un endroit pour continuer à parler avec ceux qui les ont façonnées.",
+      "tagline": "Spoiler : pas de la science-fiction. Elles veulent des phrases familières, des histoires honnêtes, des limites claires, et un endroit pour continuer à parler avec ceux qui les ont façonnées.",
+      "meta": "Environ 9 min de lecture",
+      "indexDescription": "Spoiler : pas de la science-fiction. Elles veulent des phrases familières, des histoires honnêtes, des limites claires, et un endroit pour continuer à parler avec ceux qui les ont façonnées.",
+      "indexMeta": "Écoute et perspectives · 9 min de lecture"
+    },
+    "es": {
+      "kicker": "Escucha y aprendizajes",
+      "title": "Lo que las familias realmente quieren de un « gemelo digital »",
+      "description": "Spoiler: no ciencia ficción. Quieren frases familiares, historias honestas, límites claros y un lugar para seguir hablando con quienes los formaron.",
+      "tagline": "Spoiler: no ciencia ficción. Quieren frases familiares, historias honestas, límites claros y un lugar para seguir hablando con quienes los formaron.",
+      "meta": "Aprox. 9 min de lectura",
+      "indexDescription": "Spoiler: no ciencia ficción. Quieren frases familiares, historias honestas, límites claros y un lugar para seguir hablando con quienes los formaron.",
+      "indexMeta": "Escucha y aprendizajes · 9 min de lectura"
+    }
+  }
+}
+

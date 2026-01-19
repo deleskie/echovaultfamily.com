@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-label="EchoVault hero image - orbit echo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1117"/>
+      <stop offset="0.45" stop-color="#111726"/>
+      <stop offset="1" stop-color="#0e1117"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(850 420) rotate(20) scale(700 520)">
+      <stop stop-color="#6f2ee5" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6f2ee5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="520" y1="260" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6f2ee5"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- orbits -->
+  <g opacity="0.9">
+    <ellipse cx="820" cy="450" rx="520" ry="260" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+    <ellipse cx="820" cy="450" rx="420" ry="210" stroke="rgba(167,139,250,0.14)" stroke-width="2"/>
+    <ellipse cx="820" cy="450" rx="320" ry="160" stroke="rgba(111,46,229,0.14)" stroke-width="2"/>
+    <ellipse cx="820" cy="450" rx="230" ry="112" stroke="rgba(255,255,255,0.10)" stroke-width="2"/>
+  </g>
+
+  <!-- orbit points -->
+  <circle cx="1270" cy="450" r="6" fill="#a78bfa" opacity="0.85"/>
+  <circle cx="1180" cy="305" r="5" fill="#6f2ee5" opacity="0.75"/>
+  <circle cx="1110" cy="585" r="5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="620" cy="300" r="4" fill="#a78bfa" opacity="0.65"/>
+  <circle cx="470" cy="450" r="6" fill="#6f2ee5" opacity="0.7"/>
+
+  <!-- center emblem (echo + vault) -->
+  <g transform="translate(820 450)">
+    <rect x="-150" y="-150" width="300" height="300" rx="48" fill="rgba(31,38,53,0.76)" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M-72 -24L0 -88l72 64v128a34 34 0 0 1-34 34h-76a34 34 0 0 1-34-34v-128Z" stroke="url(#accent)" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M-44 12c20-24 48-24 68 0s48 24 68 0" stroke="rgba(255,255,255,0.78)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-56 56c28 30 56 30 84 0s56-30 84 0" stroke="rgba(167,139,250,0.45)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- bottom soft gradient bar (for text overlay) -->
+  <rect x="0" y="690" width="1600" height="210" fill="rgba(14,17,23,0.65)"/>
+</svg>

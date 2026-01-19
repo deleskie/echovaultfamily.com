@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-label="EchoVault hero image - memory grid">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0e1117"/>
+      <stop offset="0.6" stop-color="#111726"/>
+      <stop offset="1" stop-color="#0e1117"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 260) rotate(-10) scale(760 520)">
+      <stop stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="520" y1="260" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6f2ee5"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- grid -->
+  <g opacity="0.35">
+    <path d="M120 120H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 220H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 320H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 420H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 520H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 620H1480" stroke="rgba(255,255,255,0.08)"/>
+    <path d="M120 720H1480" stroke="rgba(255,255,255,0.08)"/>
+
+    <path d="M260 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M420 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M580 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M740 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M900 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M1060 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M1220 120V780" stroke="rgba(255,255,255,0.06)"/>
+    <path d="M1380 120V780" stroke="rgba(255,255,255,0.06)"/>
+  </g>
+
+  <!-- memory nodes -->
+  <g>
+    <circle cx="420" cy="320" r="10" fill="#6f2ee5" opacity="0.6"/>
+    <circle cx="580" cy="420" r="8" fill="#a78bfa" opacity="0.55"/>
+    <circle cx="740" cy="520" r="10" fill="#ffffff" opacity="0.18"/>
+    <circle cx="900" cy="320" r="9" fill="#a78bfa" opacity="0.5"/>
+    <circle cx="1060" cy="420" r="10" fill="#6f2ee5" opacity="0.55"/>
+    <circle cx="1220" cy="520" r="8" fill="#a78bfa" opacity="0.5"/>
+
+    <path d="M420 320L580 420L740 520L900 320L1060 420L1220 520" stroke="rgba(167,139,250,0.22)" stroke-width="3"/>
+  </g>
+
+  <!-- vault echo badge -->
+  <g transform="translate(1220 250)">
+    <rect x="-210" y="-160" width="420" height="320" rx="44" fill="rgba(31,38,53,0.74)" stroke="rgba(255,255,255,0.14)"/>
+    <path d="M-92 -28L0 -108l92 80v158a40 40 0 0 1-40 40h-104a40 40 0 0 1-40-40v-158Z" stroke="url(#accent)" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M-50 18c22-26 52-26 74 0s52 26 74 0" stroke="rgba(255,255,255,0.78)" stroke-width="6" stroke-linecap="round"/>
+    <rect x="-140" y="120" width="280" height="12" rx="6" fill="rgba(255,255,255,0.10)"/>
+    <rect x="-140" y="144" width="220" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+  </g>
+</svg>

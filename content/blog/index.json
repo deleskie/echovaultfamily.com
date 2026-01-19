@@ -1,0 +1,39 @@
+{
+  "en": {
+    "metaTitle": "EchoVault Blog – On memory, legacy, and AI",
+    "metaDescription": "Essays and reflections on digital legacy, family stories, grief, and the thoughtful use of AI to preserve what matters.",
+    "ogTitle": "EchoVault Blog – On memory, legacy, and AI",
+    "ogDescription": "Perspectives on preserving stories, designing for grief, and building emotionally intelligent AI.",
+    "heading": "EchoVault Journal",
+    "lead": "Long-form reflections on memory, grief, and what it means to build technology that helps families stay connected across time.",
+    "backToAll": "← Back to all essays"
+  },
+  "hu": {
+    "metaTitle": "EchoVault Blog – emlékezet, örökség és MI",
+    "metaDescription": "Esszék és gondolatok digitális örökségről, családi történetekről, gyászról, és az MI emberi, óvatos használatáról.",
+    "ogTitle": "EchoVault Blog – emlékezet, örökség és MI",
+    "ogDescription": "Nézőpontok történetmegőrzésről, gyászhoz tervezett rendszerekről és érzelmileg intelligens MI-ről.",
+    "heading": "EchoVault Napló",
+    "lead": "Hosszabb írások emlékezetről, gyászról, és arról, mit jelent olyan technológiát építeni, amely segít a családoknak időn át kapcsolódni.",
+    "backToAll": "← Vissza az összes íráshoz"
+  },
+  "fr": {
+    "metaTitle": "Blog EchoVault – Mémoire, héritage et IA",
+    "metaDescription": "Essais et réflexions sur l’héritage numérique, les histoires de famille, le deuil, et l’usage réfléchi de l’IA pour préserver l’essentiel.",
+    "ogTitle": "Blog EchoVault – Mémoire, héritage et IA",
+    "ogDescription": "Points de vue sur la préservation des histoires, la conception pour le deuil, et la construction d’une IA émotionnellement intelligente.",
+    "heading": "Journal EchoVault",
+    "lead": "Réflexions au long cours sur la mémoire, le deuil, et ce que signifie créer une technologie qui aide les familles à rester liées au fil du temps.",
+    "backToAll": "← Retour à tous les essais"
+  },
+  "es": {
+    "metaTitle": "Blog de EchoVault – Memoria, legado e IA",
+    "metaDescription": "Ensayos y reflexiones sobre legado digital, historias familiares, duelo y el uso cuidadoso de la IA para preservar lo que importa.",
+    "ogTitle": "Blog de EchoVault – Memoria, legado e IA",
+    "ogDescription": "Perspectivas sobre preservar historias, diseñar para el duelo y construir una IA emocionalmente inteligente.",
+    "heading": "Diario EchoVault",
+    "lead": "Reflexiones extensas sobre memoria, duelo y lo que significa construir tecnología que ayude a las familias a mantenerse conectadas a través del tiempo.",
+    "backToAll": "← Volver a todos los ensayos"
+  }
+}
+

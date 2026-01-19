@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Local scratch assets
+artifacts/
+
+# Local env (secrets)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Local dev server artifacts
+.devserver.log
+.devserver.pid
+
+# Next.js build output
+.next/
+out/
+
+# Dependencies
+node_modules/
