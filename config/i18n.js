@@ -10,20 +10,20 @@ export const LOCALE_CONFIG = {
     hrefLang: "en",
     pathPrefix: ""
   },
-  FR: {
+  fr: {
     label: "FR",
     hrefLang: "fr",
-    pathPrefix: "/FR"
+    pathPrefix: "/fr"
   },
-  ES: {
+  es: {
     label: "ES",
     hrefLang: "es",
-    pathPrefix: "/ES"
+    pathPrefix: "/es"
   },
-  HU: {
+  hu: {
     label: "HU",
     hrefLang: "hu",
-    pathPrefix: "/HU"
+    pathPrefix: "/hu"
   }
 };
 
@@ -36,11 +36,11 @@ export function normalizeLocale(locale) {
   if (!locale) return DEFAULT_LOCALE;
   if (LOCALE_CONFIG[locale]) return locale;
 
-  const upper = String(locale).toUpperCase();
-  if (LOCALE_CONFIG[upper]) return upper;
-
   const lower = String(locale).toLowerCase();
   if (LOCALE_CONFIG[lower]) return lower;
+
+  const upper = String(locale).toUpperCase();
+  if (LOCALE_CONFIG[upper]) return upper;
 
   return DEFAULT_LOCALE;
 }
@@ -67,12 +67,7 @@ export function stripLocaleFromPath(asPath) {
   const parts = path.split("/");
   const first = parts[1];
   const normalized = normalizeLocale(first);
-  if (normalized && normalized !== DEFAULT_LOCALE && normalized === first.toUpperCase()) {
-    const rest = parts.slice(2).join("/");
-    return `/${rest}`.replace(/\/+$/, "") || "/";
-  }
-
-  if (normalized && normalized !== DEFAULT_LOCALE && normalized === first) {
+  if (normalized && normalized !== DEFAULT_LOCALE) {
     const rest = parts.slice(2).join("/");
     return `/${rest}`.replace(/\/+$/, "") || "/";
   }
@@ -872,9 +867,9 @@ const TRANSLATIONS = {
       }
     }
   },
-  FR: fr,
-  ES: es,
-  HU: hu
+  fr,
+  es,
+  hu
 };
 
 export function getTranslations(locale) {
