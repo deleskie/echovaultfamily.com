@@ -1,7 +1,7 @@
 export default {
     languageName: "Magyar",
     layout: {
-      logoTagline: "Digitális örökség, emberi módon.",
+      logoTagline: "Digitális örökség, humánusan.",
       nav: {
         home: "Kezdőlap",
         pricing: "Árak",
@@ -93,11 +93,11 @@ export default {
       errorFallback: "Valami nem sikerült. Próbáld újra egy pillanat múlva."
     },
     home: {
-      metaTitle: "EchoVault – Emberi digitális örökség",
+      metaTitle: "EchoVault – Humánus digitális örökség",
       metaDescription:
         "Az EchoVault gyengéd, MI‑támogatott interjúkkal segít rögzíteni a történeteket, ebből beszélgetős Echót épít, és a családodnak privát teret ad, hogy éveken át visszatérhessen hozzá.",
       ogDescription:
-        "Meleg, emberi mód a történetek megőrzésére és egy beszélgetős Echo létrehozására, privát családi térrel, MI‑vel a memória szolgálatában, nem sci‑fi helyettesítésként.",
+        "Meleg, humánus mód a történetek megőrzésére és egy beszélgetős Echo létrehozására, privát családi térrel, MI‑vel a memória szolgálatában, nem sci‑fi helyettesítésként.",
       glance: {
         heading: "Egy pillantás alatt: mi az EchoVault",
         lead:
@@ -533,7 +533,7 @@ export default {
       }
     },
     howItWorksPage: {
-      metaTitle: "Hogyan működik az EchoVault — vezetett, gondos, emberi",
+      metaTitle: "Hogyan működik az EchoVault — vezetett, gondos, humánus",
       metaDescription:
         "Nézd meg, hogyan használ az EchoVault gyengéd, MI‑támogatott interjúkat történetek rögzítésére, egy tiszteletteljes beszélgetős Echo felépítésére, és arra, hogy a családod kapcsolódva maradjon egy szeretted bölcsességéhez.",
       ogDescription:
@@ -543,7 +543,7 @@ export default {
         subtitle:
           "Vezetett, emberközpontú módja annak, hogy megőrizd a fontos történeteket. Nyugodt, tiszta és tiszteletteljes élményt építünk, hogy a fókusz a személyen legyen, ne a technológián.",
         support:
-          "Az EchoVault végig gyengéd, átlátható és emberi marad. Nincs meglepetés, nincs nyomás.",
+          "Az EchoVault végig gyengéd, átlátható és humánus marad. Nincs meglepetés, nincs nyomás.",
         primaryCta: "Projekt tervezése",
         secondaryCta: "GYIK"
       },

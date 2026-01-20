@@ -91,10 +91,10 @@
     "hu": {
       "kicker": "Alapítói történet",
       "title": "Visszhangok a hálóban: miért építettem az EchoVaultot",
-      "description": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault emberi módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
+      "description": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault humánus módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
       "tagline": "Gyerekként a Tron és a cyberpunk világa, később a valódi hálózatok építése, majd a felismerés: évekkel azután, hogy az apám 59 évesen meghalt, többet szeretnék hátrahagyni pár fotónál és szétszórt fájlnál.",
       "meta": "Kb. 12 perc olvasás",
-      "indexDescription": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault emberi módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
+      "indexDescription": "Egy alapítói történet sci-firől, hálózatokról, gyászról, és arról, hogyan lett az EchoVault humánus módja annak, hogy többet hagyjunk magunkból az utánunk jövőknek.",
       "indexMeta": "Alapítói történet · 12 perc olvasás"
     },
     "fr": {
@@ -234,4 +234,3 @@
     }
   }
 }
-
