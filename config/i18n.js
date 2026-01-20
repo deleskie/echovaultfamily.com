@@ -137,7 +137,7 @@ const TRANSLATIONS = {
         blog: "Blog"
       },
       actions: {
-        talkHuman: "Talk with a human",
+        talkHuman: "Talk to a person",
         joinWaitlist: "Join the waitlist"
       },
       footer: {
@@ -161,7 +161,7 @@ const TRANSLATIONS = {
       subtitle:
         "EchoVault guides gentle, AI-supported interviews, turns them into a conversational Echo, and gives your family a private space to keep asking questions for years.",
       primaryCta: "Join our waitlist",
-      secondaryCta: "Talk with a human first",
+      secondaryCta: "Talk to a person first",
       meta:
         'Designed for adult children, new parents, and anyone who has ever said, "We should really record this someday"—and means it.',
       offerLabel: "Every EchoVault project includes:",
@@ -176,7 +176,7 @@ const TRANSLATIONS = {
         },
         {
           title: "Private family access",
-          text: "A calm, access controlled space where loved ones can return to ask questions."
+          text: "A calm, access-controlled space where loved ones can return to ask questions."
         }
       ],
       visualCaption: "“Tell me about the moment you realized this really mattered to you.”"
@@ -184,11 +184,11 @@ const TRANSLATIONS = {
     trustBlock: {
       title: "How we handle your stories",
       intro:
-        "EchoVault is built for families first, not for ads or engagement graphs. We treat every recording as part of a private family archive, not content.",
+        "EchoVault is built for families first, not for ads or attention metrics. We treat every recording as part of a private family archive, not content.",
       plainTitle: "In plain language",
       plainBody:
         "EchoVault is being built to keep your recordings private by default. Only you and the people you invite should be able to access them. We don't want your family's stories showing up in ads, training demos, or anywhere else you didn't intend. If you ever want to stop, talk to us and we'll explain in clear language what we can remove or delete and what's already been shared with your family.",
-      specsTitle: "If you speak more in specs",
+      specsTitle: "If you prefer the technical details",
       specsBody:
         "We're implementing standard safeguards as the product matures: encrypted transport (TLS), encryption at rest, least-privilege access, and clear retention/deletion controls. We'll publish the exact details as we finalize infrastructure and hosting, and we'll answer any questions directly if you need specifics for your situation.",
       note:
@@ -200,10 +200,10 @@ const TRANSLATIONS = {
       lead:
         "EchoVault is in early availability with a small group of families. Join the waitlist and we'll send occasional updates, plus availability when new project slots open. If you want, add a note about who you're recording for and your timing.",
       nextSteps:
-        "If you're trying to record soon, or you're considering a Legacy or Heirloom project, you can skip the line and email us for a human reply:",
+        "If you're trying to record soon, or you're considering a Legacy or Heirloom project, you can email us directly for a personal reply:",
       successNeedConfirmTitle: "One more step.",
       successNeedConfirmText:
-        "Please check your email and confirm your subscription to finish joining the waitlist. We'll keep updates occasional and human.",
+        "Please check your email and confirm your subscription to finish joining the waitlist. We'll keep updates occasional and thoughtful.",
       successTitle: "You're on the list.",
       successText:
         "Thank you for trusting us with this. We'll send occasional updates and reach out when new availability opens. You're welcome to share this page with anyone else who should be part of the conversation.",
@@ -223,16 +223,16 @@ const TRANSLATIONS = {
       metaDescription:
         "EchoVault guides gentle, AI-supported interviews, turns them into a conversational Echo, and gives your family a private digital legacy space to keep asking questions for years.",
       ogDescription:
-        "A warm, human way to record stories, build a conversational Echo, and give your family a private place to keep talking to the people they love, using AI for memory preservation, not sci-fi replacement.",
+        "A warm way to record stories, build a conversational Echo, and give your family a private place to keep asking questions and revisiting memories over time—using AI for memory preservation, not sci-fi replacement.",
       glance: {
         heading: "In one glance: what EchoVault is",
         lead:
-          "One guided way to capture stories now and give your family a calm place to keep talking to them over time.",
+          "One guided way to capture stories now and give your family a calm place to keep coming back over time.",
         cards: [
           {
             title: "Gentle, guided interviews",
             text:
-              "Simple, AI-supported conversations that feel like sitting down with a curious, kind interviewer, not a stiff survey or interrogation."
+              "Simple, AI-supported conversations that feel like sitting down with a curious, kind interviewer, not a stiff survey."
           },
           {
             title: "A conversational Echo",
@@ -652,23 +652,23 @@ const TRANSLATIONS = {
       },
       finalCta: {
         title: "Ready to begin?",
-        lead: "Plan your EchoVault project or reach out with any question. Real humans will help.",
+        lead: "Plan your EchoVault project or reach out with any question. Real people will help.",
         primaryCta: "Plan a project",
-        secondaryCta: "Talk with a human"
+        secondaryCta: "Talk to a person"
       }
     },
     howItWorksPage: {
-      metaTitle: "How EchoVault Works — Guided, careful, human",
+      metaTitle: "How EchoVault Works — Guided, careful, and warm",
       metaDescription:
         "See exactly how EchoVault uses gentle, AI-supported interviews to capture stories, build a respectful conversational Echo, and keep your family connected to a loved one’s wisdom.",
       ogDescription:
-        "A guided, human-centered way to record stories, build a conversational Echo with AI, and talk to them anytime in a private digital legacy space.",
+        "A guided, human-centered way to record stories, build a conversational Echo with AI, and come back anytime in a private digital legacy space.",
       hero: {
         title: "How EchoVault Works, Step by Step",
         subtitle:
           "A guided, human-centered way to preserve the stories that matter. We keep the experience calm, clear, and respectful so you focus on the person, not the technology.",
         support:
-          "EchoVault stays gentle, transparent, and human at every point. No surprises, no pressure.",
+          "EchoVault stays gentle, transparent, and caring at every point. No surprises, no pressure.",
         primaryCta: "Plan a project",
         secondaryCta: "See FAQs"
       },
@@ -693,9 +693,9 @@ const TRANSLATIONS = {
             "We usually prepare the first version of the Echo within a short time after your recording sessions wrap, then refine it with you."
         },
         {
-          title: "Talk to Them Anytime",
+          title: "Come Back Anytime",
           description:
-            "Family members can return whenever they want, asking questions, revisiting memories, or exploring new topics with the Echo in a private, secure space. It’s designed to feel calm and always-available.",
+            "Family members can return whenever they want—asking questions, revisiting memories, or exploring new topics with the Echo in a private, secure space. It’s designed to feel calm and always available.",
           note:
             "Families often tell us it feels grounding, like having a quiet room they can step into when they need to hear that voice again."
         }
@@ -730,7 +730,7 @@ const TRANSLATIONS = {
         text:
           "Sit down with someone you love, keep it calm and guided, and leave with something you can return to anytime.",
         primaryCta: "Plan a project",
-        secondaryCta: "Talk with a human"
+        secondaryCta: "Talk to a person"
       },
       trust: {
         heading: "Built for trust and care",
@@ -778,7 +778,7 @@ const TRANSLATIONS = {
       metaDescription:
         "How EchoVault approaches consent, privacy, and safety for family stories and digital legacy projects. Plain language first, with technical detail available on request.",
       ogDescription:
-        "EchoVault is built to keep family stories private, consent-first, and human. Read our trust and safety approach in plain language.",
+        "EchoVault is built to keep family stories private, consent-first, and respectful. Read our trust and safety approach in plain language.",
       title: "Trust & Safety",
       lead:
         "EchoVault is an early-stage project. This page explains the principles we're building around and how we think about consent, privacy, and safety for family stories. We'll keep updating it as the product matures.",
