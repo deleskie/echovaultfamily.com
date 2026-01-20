@@ -58,7 +58,7 @@ export default {
     trustBlock: {
       title: "Cómo tratamos tus historias",
       intro:
-        "EchoVault se construye pensando primero en las familias, no en anuncios ni métricas de engagement. Tratamos cada grabación como un archivo familiar privado, no como contenido.",
+        "EchoVault se construye pensando primero en las familias, no en anuncios ni métricas de interacción. Tratamos cada grabación como un archivo familiar privado, no como contenido.",
       plainTitle: "En palabras simples",
       plainBody:
         "EchoVault se está construyendo para mantener tus grabaciones privadas por defecto. Solo tú y las personas que invites deberían poder acceder. No queremos que las historias de tu familia aparezcan en anuncios, demos o en cualquier lugar donde no las pretendías. Si quieres parar, escríbenos: te explicaremos con claridad qué podemos eliminar y qué ya se compartió con tu familia.",
@@ -77,7 +77,7 @@ export default {
         "Si quieres grabar pronto o estás considerando un proyecto Legacy o Heirloom, puedes escribirnos directamente para una respuesta humana:",
       successNeedConfirmTitle: "Un paso más.",
       successNeedConfirmText:
-        "Revisa tu correo y confirma tu suscripción para terminar. Mantendremos los mensajes pocos y humanos.",
+        "Revisa tu correo y confirma tu suscripción para terminar. Mantendremos los mensajes pocos y cercanos.",
       successTitle: "Ya estás en la lista.",
       successText:
         "Gracias por confiar en nosotros. Enviaremos actualizaciones ocasionales y te contactaremos cuando se abra disponibilidad. Puedes compartir esta página con quien deba participar en la conversación.",
@@ -543,7 +543,7 @@ export default {
         subtitle:
           "Una forma guiada y centrada en las personas de preservar las historias que importan. Mantenemos la experiencia tranquila, clara y respetuosa para que te enfoques en la persona, no en la tecnología.",
         support:
-          "EchoVault se mantiene suave, transparente y humano en cada punto. Sin sorpresas, sin presión.",
+          "EchoVault se mantiene suave, transparente y cercano en cada punto. Sin sorpresas, sin presión.",
         primaryCta: "Planificar un proyecto",
         secondaryCta: "Ver preguntas frecuentes"
       },
@@ -653,7 +653,7 @@ export default {
       metaDescription:
         "Cómo piensa EchoVault sobre consentimiento, privacidad y seguridad para historias familiares y proyectos de legado digital. Primero en lenguaje claro, con detalles técnicos disponibles a pedido.",
       ogDescription:
-        "EchoVault está pensado para mantener historias familiares privadas, con consentimiento primero y con un tono humano. Lee nuestro enfoque de confianza y seguridad.",
+        "EchoVault está pensado para mantener historias familiares privadas, con consentimiento primero y con un tono cercano. Lee nuestro enfoque de confianza y seguridad.",
       title: "Confianza y seguridad",
       lead:
         "EchoVault está en una etapa temprana. Esta página explica los principios que estamos construyendo y cómo pensamos sobre consentimiento, privacidad y seguridad para historias familiares. La iremos actualizando a medida que el producto madure.",
@@ -696,7 +696,7 @@ export default {
         heading: "Lo que no haremos",
         cards: [
           {
-            title: "Sin anuncios, sin trucos de engagement",
+            title: "Sin anuncios, sin trucos para enganchar",
             text:
               "No estamos construyendo una red social alrededor de tus recuerdos familiares. La experiencia debe sentirse tranquila y respetuosa, no optimizada para clics."
           },

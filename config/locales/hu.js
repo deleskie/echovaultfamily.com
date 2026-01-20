@@ -653,7 +653,7 @@ export default {
       metaDescription:
         "Hogyan gondolkodik az EchoVault beleegyezésről, adatvédelemről és biztonságról családi történeteknél. Először közérthetően, technikai részletekkel kérésre.",
       ogDescription:
-        "Az EchoVault célja, hogy a családi történetek privátak maradjanak, beleegyezés‑központúan és emberi hangon. Olvasd el a bizalom és biztonság megközelítésünket.",
+        "Az EchoVault célja, hogy a családi történetek privátak maradjanak, beleegyezés‑központúan és emberközeli hangon. Olvasd el a bizalom és biztonság megközelítésünket.",
       title: "Bizalom és biztonság",
       lead:
         "Az EchoVault korai fázisban van. Ez az oldal bemutatja az alapelveket és azt, hogyan gondolkodunk beleegyezésről, adatvédelemről és biztonságról. Folyamatosan frissítjük, ahogy a termék érik.",

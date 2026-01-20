@@ -11,7 +11,7 @@ export default {
         blog: "Blog"
       },
       actions: {
-        talkHuman: "Parler à un humain",
+        talkHuman: "Parler à une personne",
         joinWaitlist: "Rejoindre la liste d’attente"
       },
       footer: {
@@ -35,7 +35,7 @@ export default {
       subtitle:
         "EchoVault guide des entretiens doux et assistés par l’IA, les transforme en un Echo conversationnel, et offre à votre famille un espace privé pour continuer à poser des questions pendant des années.",
       primaryCta: "Rejoindre la liste d’attente",
-      secondaryCta: "Parler d’abord à un humain",
+      secondaryCta: "Parler d’abord à une personne",
       meta:
         "Pensé pour les enfants adultes, les jeunes parents, et toutes les personnes qui se sont déjà dit : « On devrait vraiment enregistrer ça un jour ».",
       offerLabel: "Chaque projet EchoVault comprend :",
@@ -77,7 +77,7 @@ export default {
         "Si vous souhaitez enregistrer bientôt, ou si vous envisagez un projet Legacy ou Heirloom, écrivez-nous directement pour une réponse humaine :",
       successNeedConfirmTitle: "Encore une étape.",
       successNeedConfirmText:
-        "Vérifiez votre email et confirmez votre inscription pour terminer. Nous garderons les messages rares et humains.",
+        "Vérifiez votre email et confirmez votre inscription pour terminer. Nous garderons les messages rares et chaleureux.",
       successTitle: "Vous êtes inscrit(e).",
       successText:
         "Merci pour votre confiance. Nous enverrons des mises à jour occasionnelles et nous vous contacterons lorsque de nouvelles disponibilités s’ouvrent. Vous pouvez partager cette page avec toute personne qui doit faire partie de la conversation.",
@@ -527,9 +527,9 @@ export default {
       finalCta: {
         title: "Prêt(e) à commencer ?",
         lead:
-          "Planifiez votre projet EchoVault ou posez n’importe quelle question. De vrais humains vous répondent.",
+          "Planifiez votre projet EchoVault ou posez n’importe quelle question. De vraies personnes vous répondent.",
         primaryCta: "Planifier un projet",
-        secondaryCta: "Parler à un humain"
+        secondaryCta: "Parler à une personne"
       }
     },
     howItWorksPage: {
@@ -605,7 +605,7 @@ export default {
         text:
           "Asseyez-vous avec quelqu’un que vous aimez, gardez-le calme et guidé, et repartez avec quelque chose vers lequel vous pouvez revenir quand vous voulez.",
         primaryCta: "Planifier un projet",
-        secondaryCta: "Parler à un humain"
+        secondaryCta: "Parler à une personne"
       },
       trust: {
         heading: "Conçu pour la confiance et le soin",
