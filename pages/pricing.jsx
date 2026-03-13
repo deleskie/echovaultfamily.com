@@ -172,6 +172,12 @@ export default function PricingPage() {
             </div>
           </section>
 
+          <section className="section pricing-section" aria-labelledby="pricing-trust-heading">
+            <div className="content">
+              <TrustBlock headingId="pricing-trust-heading" />
+            </div>
+          </section>
+
           <section className="section pricing-section" aria-labelledby="compare-heading">
             <div className="content">
               <div className="pricing-compare-card">
@@ -287,12 +293,6 @@ export default function PricingPage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
-
-          <section className="section pricing-section" aria-labelledby="pricing-trust-heading">
-            <div className="content">
-              <TrustBlock headingId="pricing-trust-heading" />
             </div>
           </section>
 

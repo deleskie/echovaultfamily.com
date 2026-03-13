@@ -7,6 +7,7 @@ export default function Hero() {
     <section className="hero" aria-labelledby="hero-heading">
       <div className="content hero-inner">
         <div className="hero-copy">
+          <p className="hero-eyebrow">{t.layout.logoTagline}</p>
           <h1 id="hero-heading" className="hero-title">
             {t.hero.title}
           </h1>
@@ -38,16 +39,41 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-visual" aria-hidden="true">
-          <div className="hero-card">
-            <div className="hero-avatar" />
-            <div className="hero-lines">
-              <span />
-              <span />
-              <span />
+          <div className="hero-visual-shell">
+            <div className="hero-orb hero-orb-one" />
+            <div className="hero-orb hero-orb-two" />
+            <div className="hero-card hero-card-primary">
+              <div className="hero-card-header">
+                <div className="hero-avatar" />
+                <div className="hero-card-meta">
+                  <span className="hero-card-kicker">{t.hero.offerLabel}</span>
+                  <strong>{t.hero.offerItems[1].title}</strong>
+                </div>
+              </div>
+              <div className="hero-lines">
+                <span />
+                <span />
+                <span />
+              </div>
+              <p className="hero-caption">
+                {t.hero.visualCaption}
+              </p>
             </div>
-            <p className="hero-caption">
-              {t.hero.visualCaption}
-            </p>
+            <div className="hero-card hero-card-secondary">
+              {t.hero.offerItems.map((item) => (
+                <div key={item.title} className="hero-signal">
+                  <span className="hero-signal-dot" />
+                  <div>
+                    <p className="hero-signal-title">{item.title}</p>
+                    <p className="hero-signal-text">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="hero-floating-note">
+              <span className="hero-floating-label">{t.home.walkaway.heading}</span>
+              <p>{t.home.walkaway.cards[0].title}</p>
+            </div>
           </div>
         </div>
       </div>

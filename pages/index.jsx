@@ -62,24 +62,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="section section-muted" aria-labelledby="who-heading">
-          <div className="content">
-            <h2 id="who-heading" className="section-title">
-              {t.home.who.heading}
-            </h2>
-            <div className="grid grid-3">
-              {t.home.who.cards.map((card) => (
-                <div key={card.title} className="card">
-                  <h3>{card.title}</h3>
-                  <p>{card.p1}</p>
-                  <p>
-                    <strong>{t.home.who.commonMomentLabel}</strong> {card.commonMoment}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
         <section className="section" aria-labelledby="what-heading">
           <div className="content">
             <h2 id="what-heading" className="section-title">
@@ -116,6 +98,53 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+        <section className="section section-muted" aria-labelledby="who-heading">
+          <div className="content">
+            <h2 id="who-heading" className="section-title">
+              {t.home.who.heading}
+            </h2>
+            <div className="grid grid-3">
+              {t.home.who.cards.map((card) => (
+                <div key={card.title} className="card">
+                  <h3>{card.title}</h3>
+                  <p>{card.p1}</p>
+                  <p>
+                    <strong>{t.home.who.commonMomentLabel}</strong> {card.commonMoment}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="section section-accent" aria-labelledby="why-now-heading">
+          <div className="content">
+            <h2 id="why-now-heading" className="section-title">
+              {t.home.whyNow.heading}
+            </h2>
+            <p className="lead">
+              {t.home.whyNow.lead}
+            </p>
+            <div className="grid">
+              {t.home.whyNow.cards.map((card) => (
+                <div key={card.title} className="card">
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="section-cta">
+              <Link href={localizeHashLink(locale, "#waitlist")} className="button button-primary">
+                {t.home.whyNow.cta}
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="section section-muted" aria-labelledby="home-trust-heading">
+          <div className="content">
+            <TrustBlock headingId="home-trust-heading" />
+          </div>
+        </section>
+        <TierPreview />
         <section className="section" aria-labelledby="examples-heading">
           <div className="content">
             <h2 id="examples-heading" className="section-title">
@@ -201,29 +230,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="section section-accent" aria-labelledby="why-now-heading">
-          <div className="content">
-            <h2 id="why-now-heading" className="section-title">
-              {t.home.whyNow.heading}
-            </h2>
-            <p className="lead">
-              {t.home.whyNow.lead}
-            </p>
-            <div className="grid">
-              {t.home.whyNow.cards.map((card) => (
-                <div key={card.title} className="card">
-                  <h3>{card.title}</h3>
-                  <p>{card.text}</p>
-                </div>
-              ))}
-            </div>
-            <div className="section-cta">
-              <Link href={localizeHashLink(locale, "#waitlist")} className="button button-primary">
-                {t.home.whyNow.cta}
-              </Link>
-            </div>
-          </div>
-        </section>
         <section className="section" aria-labelledby="care-heading">
           <div className="content">
             <h2 id="care-heading" className="section-title">
@@ -237,11 +243,6 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-        <section className="section section-muted" aria-labelledby="home-trust-heading">
-          <div className="content">
-            <TrustBlock headingId="home-trust-heading" />
           </div>
         </section>
         <section className="section" aria-labelledby="founder-heading">
@@ -265,7 +266,6 @@ export default function HomePage() {
             </p>
           </div>
         </section>
-        <TierPreview />
         <WaitlistCTA />
       </Layout>
     </>

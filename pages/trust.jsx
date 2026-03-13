@@ -62,16 +62,6 @@ export default function TrustPage() {
               {t.trustPage.access.body}
             </p>
 
-            <h2 className="section-title">{t.trustPage.security.heading}</h2>
-            <p>
-              {t.trustPage.security.body}
-            </p>
-
-            <h2 className="section-title">{t.trustPage.retention.heading}</h2>
-            <p>
-              {t.trustPage.retention.body}
-            </p>
-
             <h2 className="section-title">{t.trustPage.wont.heading}</h2>
             <div className="grid">
               {t.trustPage.wont.cards.map((card) => (
@@ -81,6 +71,16 @@ export default function TrustPage() {
                 </div>
               ))}
             </div>
+
+            <h2 className="section-title">{t.trustPage.security.heading}</h2>
+            <p>
+              {t.trustPage.security.body}
+            </p>
+
+            <h2 className="section-title">{t.trustPage.retention.heading}</h2>
+            <p>
+              {t.trustPage.retention.body}
+            </p>
 
             <div className="section-cta">
               <a className="button button-primary" href="mailto:hello@echovault-ai.com?subject=EchoVault%20Trust%20Question">

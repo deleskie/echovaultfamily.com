@@ -102,6 +102,20 @@ export default function HowItWorksPage() {
             </div>
           </section>
 
+          <section className="section hiw-surface-base" aria-labelledby="trust-heading">
+            <div className="content">
+              <div className="hiw-trust">
+                <h2 id="trust-heading" className="hiw-trust-title">
+                  {t.howItWorksPage.trust.heading}
+                </h2>
+                <p className="hiw-trust-copy">
+                  {t.howItWorksPage.trust.copy}
+                </p>
+              </div>
+              <TrustBlock headingId="hiw-trust-block-heading" />
+            </div>
+          </section>
+
           <section className="section hiw-surface-base" aria-labelledby="roles-heading">
             <div className="content">
               <div className="hiw-trust">
@@ -140,20 +154,6 @@ export default function HowItWorksPage() {
                   </a>
                 </div>
               </div>
-            </div>
-          </section>
-
-          <section className="section hiw-surface-base" aria-labelledby="trust-heading">
-            <div className="content">
-              <div className="hiw-trust">
-                <h2 id="trust-heading" className="hiw-trust-title">
-                  {t.howItWorksPage.trust.heading}
-                </h2>
-                <p className="hiw-trust-copy">
-                  {t.howItWorksPage.trust.copy}
-                </p>
-              </div>
-              <TrustBlock headingId="hiw-trust-block-heading" />
             </div>
           </section>
 
