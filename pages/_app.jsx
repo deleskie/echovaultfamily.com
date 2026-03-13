@@ -1,7 +1,10 @@
 import "../styles/globals.css";
+import Script from "next/script";
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { I18nProvider } from "@components/I18nProvider";
 import { getLocaleFromPath } from "@config/i18n";
+import { GA_MEASUREMENT_ID, pageview } from "@lib/gtag";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -10,9 +13,35 @@ export default function App({ Component, pageProps }) {
     : router.query?.locale;
   const locale = pageProps?.locale || queryLocale || getLocaleFromPath(router.asPath);
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
-    <I18nProvider locale={locale}>
-      <Component {...pageProps} />
-    </I18nProvider>
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}');
+        `}
+      </Script>
+      <I18nProvider locale={locale}>
+        <Component {...pageProps} />
+      </I18nProvider>
+    </>
   );
 }
