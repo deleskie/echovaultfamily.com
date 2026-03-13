@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { I18nProvider } from "@components/I18nProvider";
 import { getLocaleFromPath } from "@config/i18n";
-import { GA_MEASUREMENT_ID, pageview } from "@lib/gtag";
+import { GA_LINKER_DOMAINS, GA_MEASUREMENT_ID, pageview } from "@lib/gtag";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -36,7 +36,11 @@ export default function App({ Component, pageProps }) {
           function gtag(){dataLayer.push(arguments);}
           window.gtag = gtag;
           gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
+          gtag('config', '${GA_MEASUREMENT_ID}', {
+            linker: {
+              domains: ${JSON.stringify(GA_LINKER_DOMAINS)}
+            }
+          });
         `}
       </Script>
       <I18nProvider locale={locale}>
