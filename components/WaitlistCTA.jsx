@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useI18n } from "./I18nProvider";
+import { event as trackEvent } from "@lib/gtag";
 
 const MAILCHIMP_ACTION = process.env.NEXT_PUBLIC_MAILCHIMP_FORM_ACTION;
 const MAILCHIMP_HONEYPOT_NAME = process.env.NEXT_PUBLIC_MAILCHIMP_HONEYPOT_NAME;
@@ -76,10 +77,15 @@ export default function WaitlistCTA() {
         const message = stripHtml(payload?.msg);
 
         if (result === "success") {
-          setRequireConfirmation(requiresConfirmationFromMessage(message));
+          const needsConfirmation = requiresConfirmationFromMessage(message);
+          setRequireConfirmation(needsConfirmation);
           setStatus("success");
           setEmail("");
           setNote("");
+          trackEvent("waitlist_submit", {
+            submission_method: "mailchimp",
+            requires_confirmation: needsConfirmation
+          });
           return;
         }
 
@@ -139,6 +145,10 @@ export default function WaitlistCTA() {
       setStatus("success");
       setEmail("");
       setNote("");
+      trackEvent("waitlist_submit", {
+        submission_method: "server",
+        requires_confirmation: Boolean(payload.requireConfirmation)
+      });
     } catch (err) {
       setStatus("error");
       setError(err.message || t.waitlist.errorFallback);
@@ -179,6 +189,12 @@ export default function WaitlistCTA() {
             <a
               className="waitlist-mail-link"
               href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Timing"
+              onClick={() =>
+                trackEvent("contact_click", {
+                  contact_type: "email",
+                  cta_location: "waitlist"
+                })
+              }
             >
               hello@echovault-ai.com
             </a>
@@ -209,7 +225,15 @@ export default function WaitlistCTA() {
             )}
             <p className="waitlist-success-text">
               {t.waitlist.successFollowup}{" "}
-              <a href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Timing">
+              <a
+                href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Timing"
+                onClick={() =>
+                  trackEvent("contact_click", {
+                    contact_type: "email",
+                    cta_location: "waitlist_success"
+                  })
+                }
+              >
                 hello@echovault-ai.com
               </a>
               .

@@ -1,4 +1,5 @@
 import { useI18n } from "./I18nProvider";
+import { event } from "@lib/gtag";
 
 export default function Hero() {
   const { t } = useI18n();
@@ -15,8 +16,18 @@ export default function Hero() {
             {t.hero.subtitle}
           </p>
           <div className="hero-actions">
-            <a href="#waitlist" className="button button-primary">{t.hero.primaryCta}</a>
-            <a href="mailto:hello@echovault-ai.com" className="button button-secondary">
+            <a
+              href="#waitlist"
+              className="button button-primary"
+              onClick={() => event("cta_click", { cta_name: "hero_waitlist", cta_location: "hero" })}
+            >
+              {t.hero.primaryCta}
+            </a>
+            <a
+              href="mailto:hello@echovault-ai.com"
+              className="button button-secondary"
+              onClick={() => event("contact_click", { contact_type: "email", cta_location: "hero" })}
+            >
               {t.hero.secondaryCta}
             </a>
           </div>

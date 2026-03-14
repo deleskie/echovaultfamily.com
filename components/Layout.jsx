@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useI18n } from "./I18nProvider";
+import { event as trackEvent } from "@lib/gtag";
 import {
   getLocaleConfig,
   isLocalizedPath,
@@ -109,12 +110,24 @@ export default function Layout({ children }) {
             <a
               href="mailto:hello@echovault-ai.com"
               className="header-talk-link"
+              onClick={() =>
+                trackEvent("contact_click", {
+                  contact_type: "email",
+                  cta_location: "header"
+                })
+              }
             >
               {t.layout.actions.talkHuman}
             </a>
             <Link
               href={localizeHashLink(locale, "#waitlist")}
               className="button button-primary header-cta-button"
+              onClick={() =>
+                trackEvent("cta_click", {
+                  cta_name: "header_waitlist",
+                  cta_location: "header"
+                })
+              }
             >
               {t.layout.actions.joinWaitlist}
             </Link>
@@ -166,7 +179,17 @@ export default function Layout({ children }) {
                 <Link href={localized("/trust")}>{t.layout.footer.trust}</Link>
               </li>
               <li>
-                <a href="mailto:hello@echovault-ai.com">{t.layout.footer.contact}</a>
+                <a
+                  href="mailto:hello@echovault-ai.com"
+                  onClick={() =>
+                    trackEvent("contact_click", {
+                      contact_type: "email",
+                      cta_location: "footer"
+                    })
+                  }
+                >
+                  {t.layout.footer.contact}
+                </a>
               </li>
             </ul>
           </div>

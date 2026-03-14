@@ -5,6 +5,7 @@ import TrustBlock from "@components/TrustBlock";
 import { useI18n } from "@components/I18nProvider";
 import { getAlternateLinks, localizePath } from "@config/i18n";
 import { SITE_URL } from "@config/site";
+import { event as trackEvent } from "@lib/gtag";
 
 const HEIRLOOM_CAL_URL = process.env.NEXT_PUBLIC_HEIRLOOM_CAL_URL;
 
@@ -71,10 +72,28 @@ export default function PricingPage() {
                   {t.pricing.hero.subtitle}
                 </p>
                 <div className="pricing-hero-cta">
-                  <Link href={`${localized("/pricing")}#tiers`} className="button button-primary">
+                  <Link
+                    href={`${localized("/pricing")}#tiers`}
+                    className="button button-primary"
+                    onClick={() =>
+                      trackEvent("pricing_cta_click", {
+                        cta_name: "pricing_hero_tiers",
+                        cta_location: "pricing_hero"
+                      })
+                    }
+                  >
                     {t.pricing.hero.ctaTiers}
                   </Link>
-                  <Link href={localized("/how-it-works")} className="button button-secondary">
+                  <Link
+                    href={localized("/how-it-works")}
+                    className="button button-secondary"
+                    onClick={() =>
+                      trackEvent("pricing_cta_click", {
+                        cta_name: "pricing_hero_how_it_works",
+                        cta_location: "pricing_hero"
+                      })
+                    }
+                  >
                     {t.pricing.hero.ctaHowItWorks}
                   </Link>
                 </div>
@@ -130,13 +149,30 @@ export default function PricingPage() {
                     <p className="pricing-highlight">{tier.highlight}</p>
                     <div className="pricing-card-cta">
                       {tier.id === "heirloom" && HEIRLOOM_CAL_URL ? (
-                        <a href={HEIRLOOM_CAL_URL} className="button button-primary button-full">
+                        <a
+                          href={HEIRLOOM_CAL_URL}
+                          className="button button-primary button-full"
+                          onClick={() =>
+                            trackEvent("pricing_cta_click", {
+                              cta_name: "heirloom_calendar",
+                              cta_location: "pricing_tier",
+                              tier_id: tier.id
+                            })
+                          }
+                        >
                           {t.pricing.heirloomCalCta}
                         </a>
                       ) : (
                         <a
                           href={tier.mailtoHref}
                           className="button button-primary button-full"
+                          onClick={() =>
+                            trackEvent("pricing_cta_click", {
+                              cta_name: tier.id,
+                              cta_location: "pricing_tier",
+                              tier_id: tier.id
+                            })
+                          }
                         >
                           {tier.mailtoLabel}
                         </a>
@@ -162,10 +198,28 @@ export default function PricingPage() {
                 </p>
               </div>
               <div className="pricing-cta-actions pricing-cta-actions--center">
-                <a className="button button-primary" href="mailto:hello@echovault-ai.com">
+                <a
+                  className="button button-primary"
+                  href="mailto:hello@echovault-ai.com"
+                  onClick={() =>
+                    trackEvent("contact_click", {
+                      contact_type: "email",
+                      cta_location: "pricing_guidance_primary"
+                    })
+                  }
+                >
                   {t.pricing.guidance.primaryCta}
                 </a>
-                <a className="button button-secondary" href="mailto:support@echovault-ai.com">
+                <a
+                  className="button button-secondary"
+                  href="mailto:support@echovault-ai.com"
+                  onClick={() =>
+                    trackEvent("contact_click", {
+                      contact_type: "email",
+                      cta_location: "pricing_guidance_secondary"
+                    })
+                  }
+                >
                   {t.pricing.guidance.secondaryCta}
                 </a>
               </div>
@@ -275,7 +329,16 @@ export default function PricingPage() {
                     the same plan across 24 months.
                   </p>
                   <p>
-                    <Link className="button button-secondary" href={localized("/storage")}>
+                    <Link
+                      className="button button-secondary"
+                      href={localized("/storage")}
+                      onClick={() =>
+                        trackEvent("pricing_cta_click", {
+                          cta_name: "storage_options",
+                          cta_location: "pricing_more_details"
+                        })
+                      }
+                    >
                       View storage options
                     </Link>
                   </p>
@@ -287,7 +350,16 @@ export default function PricingPage() {
                     an image needs more help.
                   </p>
                   <p>
-                    <Link className="button button-secondary" href={localized("/photo-restoration")}>
+                    <Link
+                      className="button button-secondary"
+                      href={localized("/photo-restoration")}
+                      onClick={() =>
+                        trackEvent("pricing_cta_click", {
+                          cta_name: "photo_care_options",
+                          cta_location: "pricing_more_details"
+                        })
+                      }
+                    >
                       View photo care
                     </Link>
                   </p>
@@ -308,10 +380,25 @@ export default function PricingPage() {
                 <a
                   className="button button-primary"
                   href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Planning"
+                  onClick={() =>
+                    trackEvent("contact_click", {
+                      contact_type: "email",
+                      cta_location: "pricing_final_primary"
+                    })
+                  }
                 >
                   {t.pricing.finalCta.primaryCta}
                 </a>
-                <a className="button button-secondary" href="mailto:hello@echovault-ai.com">
+                <a
+                  className="button button-secondary"
+                  href="mailto:hello@echovault-ai.com"
+                  onClick={() =>
+                    trackEvent("contact_click", {
+                      contact_type: "email",
+                      cta_location: "pricing_final_secondary"
+                    })
+                  }
+                >
                   {t.pricing.finalCta.secondaryCta}
                 </a>
               </div>
