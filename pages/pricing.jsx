@@ -4,7 +4,7 @@ import Layout from "@components/Layout";
 import TrustBlock from "@components/TrustBlock";
 import { useI18n } from "@components/I18nProvider";
 import { getAlternateLinks, localizePath } from "@config/i18n";
-import { SITE_URL } from "@config/site";
+import { contactMailto, SITE_URL } from "@config/site";
 import { event as trackEvent } from "@lib/gtag";
 
 const HEIRLOOM_CAL_URL = process.env.NEXT_PUBLIC_HEIRLOOM_CAL_URL;
@@ -164,7 +164,7 @@ export default function PricingPage() {
                         </a>
                       ) : (
                         <a
-                          href={tier.mailtoHref}
+                          href={contactMailto(tier.mailSubject || tier.mailtoLabel)}
                           className="button button-primary button-full"
                           onClick={() =>
                             trackEvent("pricing_cta_click", {
@@ -200,7 +200,7 @@ export default function PricingPage() {
               <div className="pricing-cta-actions pricing-cta-actions--center">
                 <a
                   className="button button-primary"
-                  href="mailto:hello@echovault-ai.com"
+                  href={contactMailto("Help choosing an EchoVault tier")}
                   onClick={() =>
                     trackEvent("contact_click", {
                       contact_type: "email",
@@ -212,7 +212,7 @@ export default function PricingPage() {
                 </a>
                 <a
                   className="button button-secondary"
-                  href="mailto:support@echovault-ai.com"
+                  href={contactMailto("EchoVault question")}
                   onClick={() =>
                     trackEvent("contact_click", {
                       contact_type: "email",
@@ -318,15 +318,15 @@ export default function PricingPage() {
             <div className="content">
               <h2 className="section-title">More ways we help families</h2>
               <p className="lead">
-                If you’re organizing a bigger family archive, these pages explain our storage and photo
+                If you’re organizing a bigger family archive, these pages explain our archive service and photo
                 care options in plain language.
               </p>
               <div className="grid grid-3">
                 <div className="card">
-                  <h3>Storage</h3>
+                  <h3>Archive service plans</h3>
                   <p>
-                    Add a simple, private place for photos, audio, and family files. Pay once or spread
-                    the same plan across 24 months.
+                    Add private archive capacity, organization support, and export guidance for photos,
+                    audio, transcripts, and family files.
                   </p>
                   <p>
                     <Link
@@ -339,7 +339,7 @@ export default function PricingPage() {
                         })
                       }
                     >
-                      View storage options
+                      View archive plans
                     </Link>
                   </p>
                 </div>
@@ -379,7 +379,7 @@ export default function PricingPage() {
               <div className="pricing-cta-actions pricing-cta-actions--center">
                 <a
                   className="button button-primary"
-                  href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Planning"
+                  href={contactMailto("EchoVault Project Planning")}
                   onClick={() =>
                     trackEvent("contact_click", {
                       contact_type: "email",
@@ -391,7 +391,7 @@ export default function PricingPage() {
                 </a>
                 <a
                   className="button button-secondary"
-                  href="mailto:hello@echovault-ai.com"
+                  href={contactMailto()}
                   onClick={() =>
                     trackEvent("contact_click", {
                       contact_type: "email",

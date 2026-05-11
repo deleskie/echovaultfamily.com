@@ -375,7 +375,7 @@ export default {
           ],
           highlight:
             "Idéal pour un anniversaire, les fêtes, ou un week‑end calme. Repartez avec quelque chose à partager le jour même.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Gift%20Tier",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Gift%20Tier",
           mailtoLabel: "Parlez-nous de l’offre Gift"
         },
         {
@@ -397,7 +397,7 @@ export default {
           ],
           highlight:
             "Parfait pour les familles qui planifient un vrai projet Legacy, ou pour capturer l’histoire d’un proche avant une grande transition.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Legacy%20Project",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Legacy%20Project",
           mailtoLabel: "Planifier un projet Legacy",
           badge: "Le plus populaire"
         },
@@ -419,7 +419,7 @@ export default {
           ],
           highlight:
             "Pour l’histoire unique que vous voulez préserver avec soin, prête pour des archives familiales et des célébrations futures.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Heirloom%20Tier",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Heirloom%20Tier",
           mailtoLabel: "Parlez-nous de l’offre Heirloom"
         }
       ],

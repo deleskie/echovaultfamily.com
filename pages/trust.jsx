@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "@components/Layout";
 import { useI18n } from "@components/I18nProvider";
 import { getAlternateLinks, localizePath } from "@config/i18n";
-import { SITE_URL } from "@config/site";
+import { contactMailto, SITE_URL } from "@config/site";
 
 export default function TrustPage() {
   const { locale, t } = useI18n();
@@ -83,7 +83,7 @@ export default function TrustPage() {
             </p>
 
             <div className="section-cta">
-              <a className="button button-primary" href="mailto:hello@echovault-ai.com?subject=EchoVault%20Trust%20Question">
+              <a className="button button-primary" href={contactMailto("EchoVault Trust Question")}>
                 {t.trustPage.cta.primaryCta}
               </a>
               <Link className="button button-secondary" href={localized("/pricing")}>

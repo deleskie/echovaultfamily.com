@@ -375,7 +375,7 @@ export default {
           ],
           highlight:
             "Születésnapra, ünnepre vagy egy nyugodt hétvégére. Olyan eredménnyel, amit akár még aznap megoszthatsz.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Gift%20Tier",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Gift%20Tier",
           mailtoLabel: "Beszéljünk a Gift csomagról"
         },
         {
@@ -397,7 +397,7 @@ export default {
           ],
           highlight:
             "Legjobb dedikált Legacy projekthez, vagy ha egy nagy átmenet előtt szeretnéd rögzíteni egy szeretted történetét.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Legacy%20Project",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Legacy%20Project",
           mailtoLabel: "Legacy projekt tervezése",
           badge: "Legnépszerűbb"
         },
@@ -419,7 +419,7 @@ export default {
           ],
           highlight:
             "Egy generációs történethez, amit gondossággal szeretnél megőrizni, családi archívumhoz és jövőbeli ünnepekhez készen.",
-          mailtoHref: "https://mail.google.com/mail/?view=cm&fs=1&to=hello@echovault-ai.com&su=EchoVault%20Heirloom%20Tier",
+          mailtoHref: "mailto:hello@echovaultfamily.com?subject=EchoVault%20Heirloom%20Tier",
           mailtoLabel: "Beszéljünk a Heirloom csomagról"
         }
       ],

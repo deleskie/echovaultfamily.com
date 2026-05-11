@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { useI18n } from "./I18nProvider";
 import { event as trackEvent } from "@lib/gtag";
+import { CONTACT_EMAIL, contactMailto } from "@config/site";
 
 const MAILCHIMP_ACTION = process.env.NEXT_PUBLIC_MAILCHIMP_FORM_ACTION;
 const MAILCHIMP_HONEYPOT_NAME = process.env.NEXT_PUBLIC_MAILCHIMP_HONEYPOT_NAME;
@@ -31,6 +32,7 @@ export default function WaitlistCTA() {
   const [status, setStatus] = useState("idle"); // idle | submitting | success | error
   const [error, setError] = useState("");
   const [requireConfirmation, setRequireConfirmation] = useState(false);
+  const [emailFallbackUsed, setEmailFallbackUsed] = useState(false);
   const activeScriptRef = useRef(null);
 
   const cleanupMailchimpScript = () => {
@@ -78,6 +80,7 @@ export default function WaitlistCTA() {
 
         if (result === "success") {
           const needsConfirmation = requiresConfirmationFromMessage(message);
+          setEmailFallbackUsed(false);
           setRequireConfirmation(needsConfirmation);
           setStatus("success");
           setEmail("");
@@ -122,37 +125,35 @@ export default function WaitlistCTA() {
     document.body.appendChild(script);
   };
 
-  const submitViaServer = async () => {
-    setStatus("submitting");
-    setError("");
+  const submitViaEmail = () => {
+    const trimmedEmail = email.trim();
+    const trimmedNote = note.trim();
 
-    try {
-      const response = await fetch("/api/waitlist", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ email, note })
-      });
-
-      const payload = await response.json().catch(() => ({}));
-
-      if (!response.ok) {
-        throw new Error(payload.message || "Could not save your details");
-      }
-
-      setRequireConfirmation(Boolean(payload.requireConfirmation));
-      setStatus("success");
-      setEmail("");
-      setNote("");
-      trackEvent("waitlist_submit", {
-        submission_method: "server",
-        requires_confirmation: Boolean(payload.requireConfirmation)
-      });
-    } catch (err) {
+    if (!trimmedEmail) {
       setStatus("error");
-      setError(err.message || t.waitlist.errorFallback);
+      setError(t.waitlist.errorFallback);
+      return;
     }
+
+    const body = [
+      `Email: ${trimmedEmail}`,
+      trimmedNote ? `Project note: ${trimmedNote}` : "",
+      "",
+      "Please add me to the EchoVault waitlist."
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    window.location.href = contactMailto("EchoVault waitlist", body);
+    setEmailFallbackUsed(true);
+    setRequireConfirmation(false);
+    setStatus("success");
+    setEmail("");
+    setNote("");
+    trackEvent("waitlist_submit", {
+      submission_method: "email_fallback",
+      requires_confirmation: false
+    });
   };
 
   const handleSubmit = async (event) => {
@@ -167,7 +168,7 @@ export default function WaitlistCTA() {
       return;
     }
 
-    await submitViaServer();
+    submitViaEmail();
   };
 
   return (
@@ -188,7 +189,7 @@ export default function WaitlistCTA() {
             {t.waitlist.nextSteps}{" "}
             <a
               className="waitlist-mail-link"
-              href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Timing"
+              href={contactMailto("EchoVault Project Timing")}
               onClick={() =>
                 trackEvent("contact_click", {
                   contact_type: "email",
@@ -196,14 +197,22 @@ export default function WaitlistCTA() {
                 })
               }
             >
-              hello@echovault-ai.com
+              {CONTACT_EMAIL}
             </a>
             .
           </p>
         </div>
         {status === "success" ? (
           <div className="waitlist-form waitlist-success">
-            {requireConfirmation ? (
+            {emailFallbackUsed ? (
+              <>
+                <p className="waitlist-success-title">Email draft opened.</p>
+                <p className="waitlist-success-text">
+                  Send the draft to finish joining the waitlist. If your email app did not open, use the
+                  address below and include your project timing.
+                </p>
+              </>
+            ) : requireConfirmation ? (
               <>
                 <p className="waitlist-success-title">{t.waitlist.successNeedConfirmTitle}</p>
                 <p className="waitlist-success-text">
@@ -211,7 +220,7 @@ export default function WaitlistCTA() {
                 </p>
                 <p className="waitlist-success-text">
                   If you&apos;re using Gmail, check Spam and Promotions. If you find it there, open the email and click
-                  &quot;Not spam&quot; (and optionally add hello@echovault-ai.com to your contacts) so future updates land in
+                  &quot;Not spam&quot; (and optionally add {CONTACT_EMAIL} to your contacts) so future updates land in
                   your inbox.
                 </p>
               </>
@@ -226,7 +235,7 @@ export default function WaitlistCTA() {
             <p className="waitlist-success-text">
               {t.waitlist.successFollowup}{" "}
               <a
-                href="mailto:hello@echovault-ai.com?subject=EchoVault%20Project%20Timing"
+                href={contactMailto("EchoVault Project Timing")}
                 onClick={() =>
                   trackEvent("contact_click", {
                     contact_type: "email",
@@ -234,7 +243,7 @@ export default function WaitlistCTA() {
                   })
                 }
               >
-                hello@echovault-ai.com
+                {CONTACT_EMAIL}
               </a>
               .
             </p>

@@ -1,5 +1,6 @@
 import { useI18n } from "./I18nProvider";
 import { event } from "@lib/gtag";
+import { contactMailto } from "@config/site";
 
 export default function Hero() {
   const { t } = useI18n();
@@ -24,7 +25,7 @@ export default function Hero() {
               {t.hero.primaryCta}
             </a>
             <a
-              href="mailto:hello@echovault-ai.com"
+              href={contactMailto()}
               className="button button-secondary"
               onClick={() => event("contact_click", { contact_type: "email", cta_location: "hero" })}
             >

@@ -14,6 +14,7 @@ import {
   SUPPORTED_LOCALES,
   swapLocaleInPath
 } from "@config/i18n";
+import { contactMailto } from "@config/site";
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -108,7 +109,7 @@ export default function Layout({ children }) {
               </div>
             </details>
             <a
-              href="mailto:hello@echovault-ai.com"
+              href={contactMailto()}
               className="header-talk-link"
               onClick={() =>
                 trackEvent("contact_click", {
@@ -180,7 +181,7 @@ export default function Layout({ children }) {
               </li>
               <li>
                 <a
-                  href="mailto:hello@echovault-ai.com"
+                  href={contactMailto()}
                   onClick={() =>
                     trackEvent("contact_click", {
                       contact_type: "email",

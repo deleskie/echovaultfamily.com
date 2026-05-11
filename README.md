@@ -23,6 +23,6 @@ Static export output is written to `./out/`.
 
 Copy `./.env.local.example` to `./.env.local` and fill values as needed.
 
-- `NEXT_PUBLIC_SITE_URL` (recommended): canonical base URL for SEO tags (e.g. `https://www.echovault-ai.com`)
+- `NEXT_PUBLIC_SITE_URL` (recommended): canonical base URL for SEO tags (e.g. `https://www.echovaultfamily.com`)
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID` (optional): GA4 measurement ID for site traffic analytics (e.g. `G-0LTRJ9BM3C`)
 - `NEXT_PUBLIC_HEIRLOOM_CAL_URL` (optional): shows a booking link on `/pricing`

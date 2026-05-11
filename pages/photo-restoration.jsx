@@ -4,7 +4,7 @@ import Layout from "@components/Layout";
 import TrustBlock from "@components/TrustBlock";
 import { useI18n } from "@components/I18nProvider";
 import { getAlternateLinks, localizePath } from "@config/i18n";
-import { SITE_URL } from "@config/site";
+import { contactMailto, SITE_URL } from "@config/site";
 
 const INCLUDED_BASIC_PHOTOS = "Included on all photos";
 
@@ -58,11 +58,11 @@ export default function PhotoRestorationPage() {
                 that matter—without making them look plastic or “filtered.”
               </p>
               <div className="section-cta">
-                <a className="button button-primary" href="mailto:hello@echovault-ai.com?subject=Photo%20Care">
+                <a className="button button-primary" href={contactMailto("Photo Care")}>
                   Ask about photo care
                 </a>
                 <Link className="button button-secondary" href={localized("/storage")}>
-                  See storage options
+                  See archive service plans
                 </Link>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function PhotoRestorationPage() {
                   ))}
                 </div>
                 <div className="pricing-card-cta">
-                  <a className="button button-primary" href="mailto:hello@echovault-ai.com?subject=Photo%20Care%20Credits">
+                  <a className="button button-primary" href={contactMailto("Photo Care Credits")}>
                     Ask about credit packs
                   </a>
                   <Link className="button button-secondary" href={localized("/pricing")}>
